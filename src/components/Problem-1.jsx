@@ -86,7 +86,7 @@ const Problem1 = () => {
                             {filteredTasks().map((task, index) => (
                                 <tr key={index}>
                                     <td>{task.name}</td>
-                                    <td>{task.status}</td>
+                                    <td>{task.status.toLowerCase()}</td>
                                 </tr>
                             ))}
                         </tbody>
